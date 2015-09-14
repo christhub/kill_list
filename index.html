@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>GoT Kill List</title>
+</head>
+  <body>
+    <div class="container">
+      <h1>GoT Kill List</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a killer:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="house">House</label>
+              <input type="text" class="form-control" id="house">
+            </div>
+            <div id="new-kills">
+              <div class="new-kill">
+                <div class="form-group">
+                  <label for="kill">Kill</label>
+                  <input type="text" class="form-control kill">
+                </div>
+                <div class="form-group">
+                  <label for="execution">Method of Kill</label>
+                  <input type="text" class="form-control execution">
+                </div>
+              </div>
+            </div>
+
+            <span class="btn btn-default" id="add-kill">Another kill</span>
+            <button type="submit" class="btn btn-primary">Add</button>
+          </form>
+
+          <h2>Killers:</h2>
+          <ul id="killer">
+
+          </ul>
+          <div class="col-md-6">
+            <div id="show-killer">
+              <h2></h2>
+
+              <p>Name: <span class="name"></span></p>
+              <p>House: <span class="house"></span></p>
+              <p>
+                Kills:
+              </p>
+              <ul id="kills">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

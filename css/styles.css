@@ -1,0 +1,12 @@
+#show-killer {
+  display: none;
+}
+
+.new-killer {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.new-killer:hover {
+  text-decoration: underline;
+}
